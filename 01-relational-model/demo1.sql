@@ -1,5 +1,7 @@
 
 
+-- mysql - relational model
+
 
 ```bash
 mysql -u root -p 

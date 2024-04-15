@@ -6,3 +6,10 @@ Day-1
     - Graph database vs relational database vs NoSQL database
     - Neo4j overview
     - Neo4j installation
+
+Day-2
+
+    - Neo4j Cypher query language basics ( CRUD operations )
+    - Neo4j data modeling
+
+    
