@@ -291,3 +291,64 @@ RETURN labels(p)
 ```cypher
 CALL db.labels()
 ```
+
+----------------------------------------------------
+
+
+
+create a node with a property
+
+```cypher
+MERGE (p:Person {name: 'Diya', born: 2018})
+RETURN p
+```
+
+read the node
+
+```cypher
+MATCH (p:Person {born: 2018})
+RETURN p
+```
+
+
+----------------------------------------------------
+CREATE vs MERGE
+----------------------------------------------------
+
+clean neo4j
+
+```cypher
+MATCH (n)
+DETACH DELETE n
+```
+
+create a node with a property
+
+```cypher
+CREATE (p:Person {name: 'Diya', born: 2018})
+RETURN p
+```
+
+get all nodes
+
+```cypher
+MATCH (p:Person)
+RETURN p
+```
+
+
+create a node with a property
+
+```cypher
+MEGE (p:Person {name: 'Diya', born: 2018})
+RETURN p
+```
+
+
+```cypher
+MERGE (p:Person {name: 'McKenna Grace'})
+SET p.born = 2008
+RETURN p
+
+```
+

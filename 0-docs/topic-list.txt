@@ -1,15 +1,21 @@
 
 
 Day-1
-
     - What is graph database?
     - Graph database vs relational database vs NoSQL database
     - Neo4j overview
     - Neo4j installation
 
 Day-2
+    - Neo4j & Cypher Fundamentals
 
-    - Neo4j Fundamentals
-    - Cypher Fundamentals
-    
-    
+Day-3
+    - Example use-case
+    - data modeling
+        - how to identify nodes and relationships
+        - how to identify properties
+        - how to identify labels
+        - how to identify indexes
+        - how to identify constraints
+     - instance data modeling   
+    - neo4j data types     
