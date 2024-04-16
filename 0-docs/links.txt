@@ -9,3 +9,4 @@ https://nagcloudlab.notion.site/Neo4J-8ddb32feb0a44eea8203fc858b37b6a8?pvs=4
 Slides
 ------
 https://docs.google.com/presentation/d/13cPt-mD3DMLbFVJzvi3xTxWTWpoMQRMdr8vvU4B0F2U/edit?usp=sharing
+https://dev.neo4j.com/intro_to_cypher_slides?_gl=1*1m3tdhb*_ga*MTI1OTM5MTk4MC4xNzExNTQyMTg1*_ga_DL38Q8KGQC*MTcxMzI1MDY5OC4yMy4xLjE3MTMyNTA3MjAuMC4wLjA.
