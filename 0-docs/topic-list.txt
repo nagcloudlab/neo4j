@@ -9,7 +9,7 @@ Day-1
 
 Day-2
 
-    - Neo4j Cypher query language basics ( CRUD operations )
-    - Neo4j data modeling
-
+    - Neo4j Fundamentals
+    - Cypher Fundamentals
+    
     

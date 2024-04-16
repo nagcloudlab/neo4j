@@ -3,5 +3,9 @@
 
 Notion Pages
 ---------------
-
 https://nagcloudlab.notion.site/Neo4J-8ddb32feb0a44eea8203fc858b37b6a8?pvs=4
+
+
+Slides
+------
+https://docs.google.com/presentation/d/13cPt-mD3DMLbFVJzvi3xTxWTWpoMQRMdr8vvU4B0F2U/edit?usp=sharing
