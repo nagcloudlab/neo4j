@@ -1,2 +1,70 @@
 
 
+
+CREATE  clause
+------------------------------
+
+
+- Create empty nodes
+- Create Multiple empty Nodes
+- Node variables
+- Create nodes with labels
+- Create nodes with properties
+- Create nodes with labels and properties
+- Create relationships
+- Create relationships with properties
+- Returning multiple variables by '*'
+- Exercise Write a Cypher Query to create below graph
+  e.g Peter is married to Anne and they have a house.
+- Direction of relationship is from Peter to Anne
+- Node with relationship
+- Path variables to represent the relationship
+- Create Relationship b/w nodes e.g Family Tree
+- Create Relationship b/w nodes e.g Crime Investigation
+
+
+MATCH  clause
+------------------------------
+
+- Match all nodes
+- Match all nodes with labels
+- Matching Related nodes
+- Matching Related nodes with Example
+- Matching with Labels
+- Matching by incomming Relationships
+- Copying Properties from one Node to another
+- Copying Properties from Relationships
+
+
+RETURN  clause
+------------------------------
+
+- RETURN Node with properties
+- RETURN Relationship type
+- RETURN with Alias
+- RETURN with Distinct
+- RETURn node | relationship properties
+- RETURN all labels
+- RETURN all relationships
+
+
+MATCH and RETURN
+------------------------------
+
+
+- Fetching Relationship Types
+- Matching on Relationship Types
+- Matching with Multiple Relationship Types
+- MATCH+CREATE+RETURN
+- Using Multiple Relationships-1
+
+
+OPTIONAL MATCH clause
+------------------------------
+
+- OPTIONAL MATCH
+
+
+
+ORDER BY clause
+------------------------------
