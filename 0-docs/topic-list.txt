@@ -57,14 +57,57 @@ MATCH and RETURN
 - Matching with Multiple Relationship Types
 - MATCH+CREATE+RETURN
 - Using Multiple Relationships-1
-
-
-OPTIONAL MATCH clause
-------------------------------
-
 - OPTIONAL MATCH
+- ORDER BY
+- LIMIT
+- SKIP
 
 
+------------------------------------------------------------
 
-ORDER BY clause
-------------------------------
+- UNION ALL
+- UNION
+
+- WITH
+
+
+Cypher WITH clause
+---------------------------
+
+The `WITH` clause is used to chain multiple queries together. 
+It is used to pass the results of one query to the next query. 
+The `WITH` clause is used to pass the results
+
+------------------------------------------------------------
+
+- DELETE
+- DETACH DELETE
+- REMOVE
+
+-------------------------------------------------------------
+
+- MERGE = MATCH + CREATE
+
+-------------------------------------------------------------
+
+
+- null
+
+NULL isn't a keyword. 
+Neo4j is used to represent the absence of a value or undefined values.
+
+-------------------------------------------------------------
+
+(no changes, no records): 
+This is a message from Neo4j which means that the executed query 
+didn't modify anything in the database (no changes) and 
+didn't return any results (no records).
+
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+
+
+- collect() => indiv-elements to list
+- unwind() => list to indiv-elements
