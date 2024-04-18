@@ -54,12 +54,12 @@ return properties(n)
 
 
 match(n{name:"Jacob"})
-set n + = { }
+set n+ = { }
 return properties(n)
 
 
 match(n{name:"Jacob"})
-set n + = {salary: "25,000"}
+set n += {salary: "25,000"}
 return properties(n)
 
 
@@ -131,12 +131,11 @@ return properties(b)
 copying properties between relationships
 
 
-({name:"Tom Hanks"})-[r2]->({title:"The Green Mile"})
+match({name:"Tom Hanks"})-[r2]->({title:"The Green Mile"})
 return properties(r2)
 
 match
 ({name:"Tom Hanks"})-[r1]->({title:"Cast Away"}),
-
 ({name:"Tom Hanks"})-[r2]->({title:"The Green Mile"})
 set r2 = r1
 return properties(r2)
