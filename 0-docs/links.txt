@@ -17,3 +17,4 @@ Cypher Examples over Movie dataset
 ----------------------------------
 
 https://github.com/priya-jacob/neo4j-training/wiki
+https://graphacademy.neo4j.com/

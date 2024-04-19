@@ -1,0 +1,7 @@
+
+
+- neo4j data modeling
+- import csv data into neo4j
+- data types
+- transactions
+- neo4j + language drivers ( javascript, python, etc)
