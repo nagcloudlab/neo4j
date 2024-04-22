@@ -3,7 +3,8 @@ package org.example.api;
 import lombok.RequiredArgsConstructor;
 import org.example.dto.UserDTO;
 import org.example.model.User;
-import org.example.request.CreateUserRequest;
+import org.example.dto.request.CreateUserRequest;
+import org.example.service.NeoUserDetailsService;
 import org.example.service.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,13 +18,12 @@ import java.security.Principal;
 public class UserController {
 
     private final UserService userService;
+    private final NeoUserDetailsService neoUserDetailsService;
 
     @GetMapping("/me")
     public String me(Principal principal) {
-        System.out.println("UserController.me");
-        return principal.getName();
+      return principal.getName();
     }
-
 
     @PostMapping("/register")
     public ResponseEntity<UserDTO> signUp(@RequestBody CreateUserRequest request) {

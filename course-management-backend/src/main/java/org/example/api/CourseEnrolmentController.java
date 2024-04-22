@@ -1,10 +1,11 @@
 package org.example.api;
 
+import lombok.RequiredArgsConstructor;
 import org.example.dto.CourseDTO;
 import org.example.dto.CourseEnrolmentDTO;
 import org.example.model.Course;
+import org.example.dto.request.CourseEnrolmentRequest;
 import org.example.query.result.CourseEnrolmentQueryResult;
-import org.example.request.CourseEnrolmentRequest;
 import org.example.service.CourseEnrolmentService;
 import org.example.service.LessonService;
 import org.springframework.http.HttpStatus;
@@ -15,17 +16,14 @@ import java.security.Principal;
 import java.util.List;
 import java.util.stream.Collectors;
 
-
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/v1/enrollments")
 public class CourseEnrolmentController {
+
     private final CourseEnrolmentService courseEnrolmentService;
     private final LessonService lessonService;
 
-    public CourseEnrolmentController(CourseEnrolmentService courseEnrolmentService, LessonService lessonService) {
-        this.courseEnrolmentService = courseEnrolmentService;
-        this.lessonService = lessonService;
-    }
 
     @GetMapping("/")
     public ResponseEntity<List<CourseDTO>> enrollments(Principal principal) {
@@ -52,6 +50,7 @@ public class CourseEnrolmentController {
 
     @PostMapping("/")
     public ResponseEntity<CourseEnrolmentDTO> enrollIn(@RequestBody CourseEnrolmentRequest request, Principal principal) {
+
         CourseEnrolmentQueryResult enrolment = courseEnrolmentService.enrollIn(principal.getName(), request.getCourseIdentifier());
 
         CourseEnrolmentDTO responseEnrolment = new CourseEnrolmentDTO();
@@ -62,4 +61,5 @@ public class CourseEnrolmentController {
 
         return new ResponseEntity<>(responseEnrolment, HttpStatus.OK);
     }
+
 }

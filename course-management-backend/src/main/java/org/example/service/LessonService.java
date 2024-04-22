@@ -13,8 +13,8 @@ public class LessonService {
 
     private final LessonRepository lessonRepository;
 
-    public List<Lesson> getAllLessonsByCourseIdentifier(String identifier) {
-        return lessonRepository.findLessonsByCourseIdentifier(identifier);
+    public List<Lesson> getAllLessonsByCourseIdentifier(String courseIdentifier) {
+        return lessonRepository.findLessonsByCourseIdentifier(courseIdentifier);
     }
 
 }

@@ -10,6 +10,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 public class CourseDTO {
+
     private String identifier;
     private String title;
     private String teacher;

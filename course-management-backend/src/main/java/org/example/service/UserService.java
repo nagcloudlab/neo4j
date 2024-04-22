@@ -3,7 +3,7 @@ package org.example.service;
 
 import org.example.model.User;
 import org.example.repository.UserRepository;
-import org.example.request.CreateUserRequest;
+import org.example.dto.request.CreateUserRequest;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -27,6 +27,17 @@ public class UserService {
         user.setRoles(request.getRoles());
         user.setPassword(passwordEncoder.encode(request.getPassword()));
 
+        // Cypher query to create a new user
+
+        // MATCH (u:User {username: $username})
+        // WHERE NOT EXISTS(u)
+        // CREATE (u:User {name: $name, username: $username, password: $password, roles: $roles})
+
+        // or
+
+        // MERGE (u:User {username: $username})
+        // ON CREATE SET u.name = $name, u.password = $password, u.roles = $roles
+        // RETURN u
         userRepository.save(user);
 
         return user;

@@ -1,9 +1,9 @@
 package org.example.service;
 
 import org.example.model.Course;
-import org.example.query.result.CourseEnrolmentQueryResult;
 import org.example.repository.CourseRepository;
 import org.example.repository.UserRepository;
+import org.example.query.result.CourseEnrolmentQueryResult;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
